@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import TaskItems from './Component/TaskItems/TaskItems';
 
 function App() {
   return (
     <div className="App">
-      <h2>HELLo World</h2>
+      <TaskItems></TaskItems>
     </div>
   );
 }
