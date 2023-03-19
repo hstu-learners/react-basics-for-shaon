@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import TaskItems from './Component/TaskItems/TaskItems';
+import { Route, Routes } from 'react-router';
 
 function App() {
   return (
     <div className="App">
-      <TaskItems></TaskItems>
+      <Routes>
+        <Route path="/taskitem" element={<TaskItems></TaskItems>} ></Route>
+      </Routes>
     </div>
   );
 }

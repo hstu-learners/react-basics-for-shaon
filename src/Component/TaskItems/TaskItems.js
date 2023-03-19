@@ -2,7 +2,7 @@ import React from 'react';
 import TaskItem from './TaskItem';
 
 const TaskItems = () => {
-    const TaskItems = ["Workout", "Cycling", "Swiming"];
+    const TaskItems = ["Create new components", "Improve work flow in Figma", "Create dark mode for IOS"];
     return (
         <div>
             {
