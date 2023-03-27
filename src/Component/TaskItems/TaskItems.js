@@ -2,7 +2,27 @@ import React from 'react';
 import TaskItem from './TaskItem';
 
 const TaskItems = () => {
-    const TaskItems = ["Create new components", "Improve work flow in Figma", "Create dark mode for IOS"];
+    const TaskItems = [
+        {
+            'name': 'Walking',
+            'assignee': 'Aktar',
+            'label': 'High',
+            'status': 'Completed'
+        },
+        {
+            'name': 'Swiming',
+            'assignee': 'Jaman',
+            'label': 'High',
+            'status': 'Completed'
+        },
+        {
+            'name': 'Cycling',
+            'assignee': 'Shaon',
+            'label': 'High',
+            'status': 'Partially completed'
+        }
+    ]
+
     return (
         <div>
             {
