@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import TaskItems from './Component/TaskItems/TaskItems';
 import { Route, Routes } from 'react-router';
