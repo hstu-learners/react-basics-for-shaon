@@ -24,7 +24,7 @@ const TaskItems = () => {
     ]
 
     return (
-        <div>
+        <div className='mt-10'>
             {
                 TaskItems.map((taskitem, index) => <TaskItem
                     key={index}
