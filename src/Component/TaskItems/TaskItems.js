@@ -1,25 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TaskItem from './TaskItem';
+import TaskItemEditModal from './TaskItemEditModal';
 
 const TaskItems = () => {
+
     const TaskItems = [
         {
-            'name': 'Walking',
-            'assignee': 'Aktar',
-            'label': 'High',
-            'status': 'Completed'
+            name: 'Walking',
+            assignee: 'Aktar',
+            label: 'High',
+            status: 'Completed'
         },
         {
-            'name': 'Swiming',
-            'assignee': 'Jaman',
-            'label': 'High',
-            'status': 'Completed'
+            name: 'Swiming',
+            assignee: 'Jaman',
+            label: 'High',
+            status: 'Completed'
         },
         {
-            'name': 'Cycling',
-            'assignee': 'Shaon',
-            'label': 'High',
-            'status': 'Partially completed'
+            name: 'Cycling',
+            assignee: 'Shaon',
+            label: 'High',
+            status: 'Partially completed'
         }
     ]
 
@@ -31,7 +33,11 @@ const TaskItems = () => {
                     taskitem={taskitem}
                 ></TaskItem>)
             }
+            {
+                <TaskItemEditModal></TaskItemEditModal>
+            }
         </div>
+
     );
 };
 
